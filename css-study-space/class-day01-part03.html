@@ -8,24 +8,62 @@
     <title>Css Text文本</title>
 </head>
 <style>
-    p {
-        color:blue;
-        background-color: black;
+    body {
+        /* background-color:#777; */
+        color: blue;
     }
 
-    h2 {
-        text-align: center
+    h1 {
+        color: red;
+        text-align: center;
+        width: 600px;
+        text-decoration: underline;
+    }
+
+    p {
+        word-spacing: 1em;
+    }
+
+    .ex {
+        color: #666;
+    }
+
+    p.ex {
+        text-transform: capitalize;
+    }
+
+    p.first {
+        text-indent: 50px;
+
     }
 </style>
 
 <body>
 
-    <p>
-        <h2>text formatting</h2>
-        This text is styled with some of the text formatting properties. The heading uses the text-align, text-transform, and color
-        properties. The paragraph is indented, aligned, and the space between characters is specified. The underline is removed
-        from the "尝试一下"link.
+    <h1>This is heading 1</h1>
+    <p class="first">This is an ordinary paragraph. Notice that this text is red. The default text-color for a page is defined in the body
+        selector.
     </p>
+    <p class="ex">This is a paragraph with class="ex". This text is blue.</p>
+
+    <pre>
+        所有CSS文本属性。
+
+        属性	描述
+        color	设置文本颜色
+        direction	设置文本方向。
+        letter-spacing	设置字符间距
+        line-height	设置行高
+        text-align	对齐元素中的文本
+        text-decoration	向文本添加修饰
+        text-indent	缩进元素中文本的首行
+        text-shadow	设置文本阴影
+        text-transform	控制元素中的字母
+        unicode-bidi	设置或返回文本是否被重写 
+        vertical-align	设置元素的垂直对齐
+        white-space	设置元素中空白的处理方式
+        word-spacing	设置字间距
+    </pre>
 </body>
 
 </html>
